@@ -3,6 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,4 +59,333 @@ table {
 html, body {
     height: 100%;
 }
+
+@color: #750063bd;
+@headerfont: 'Odibee Sans', cursive;
+.background(){
+	background-color: @color;
+}
+
+.h2font(){
+	font-family: 'Odibee Sans', cursive;
+	font-weight: bold;
+	margin-bottom: 3%;
+	font-size: 2.2em;
+	letter-spacing: 1.5;
+}
+
+.listfont(){
+	font-family: 'Playfair Display', serif;
+	line-height: 2;
+	font-weight: bold;
+	letter-spacing: 3;
+}
+
+.pfont(){
+	font-family: 'Slabo 27px', serif;
+	line-height: 1.5;
+	letter-spacing: 1.5;
+}
+
+.just-ali-cen(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.con-half(){
+	width: 50%;
+}
+
+.wrapper{
+	box-sizing: border-box;
+	width: 100%;
+	.just-ali-cen();
+	background-color: #75006348;
+
+	.img-con-work{
+		max-width: 100%;
+		.background();
+		height: 200vh;
+		box-shadow: 5px 5px 10px @color;
+		.just-ali-cen();
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		.imgcontainer{
+			max-width: 100%;
+			margin-right: 2.5%;
+			margin-top: -24.5%;
+		}
+
+		.contact{
+			.just-ali-cen();
+			flex-direction: column;
+
+			h2{
+
+				.h2font();
+			}
+
+			ul{
+				flex-direction: column;
+
+				li{
+					.listfont();
+				}
+			}
+
+		}// Closes Contact
+		.work{
+			.just-ali-cen();
+			flex-direction: column;
+			margin-top: 40%;
+
+			h2{
+				.h2font();
+			}
+
+			ul{
+				.just-ali-cen();
+				flex-direction: column;
+				.listfont();
+			}
+		}// Closes Work
+
+
+
+	}// Closes Img-Con-Work
+
+	.info{
+		width: 50%;
+		.just-ali-cen();
+		flex-direction: column;
+		justify-content: space-between;
+		.top{
+			.just-ali-cen();
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			height: 50vh;
+			width: 100%;
+			margin-left: 3%;
+			// margin-top: -65%;
+
+			.isaac{
+				.h2font();
+				font-size: 100px;
+
+			}
+
+			.occupation{
+
+				font-size: 30px;
+				font-weight: bold;
+				opacity: .8;
+				color: @color;
+			}
+
+			div{
+				height: 10px;
+				background-color: @color;
+				width: 100%;
+				margin-top: 2%;
+				box-shadow: 2px 5px 10px darkslateblue;
+			}
+
+		}// Closes Top
+
+		.about-skills{
+			width: 100%;
+			.just-ali-cen();
+			margin-top: -20%;
+			margin-bottom: 20%;
+
+			.summary{
+				width: 50%;
+				margin-left: 5%;
+
+				h2{
+					.h2font();
+				}
+
+				p{
+					.pfont();
+				}
+
+			}// Closes Summary
+
+			.core-skills{
+				width: 50%;
+				margin-left: 10%;
+				margin-top: 3%;
+
+				h2{
+					.h2font();
+				}
+
+				ul{
+					list-style-type: disc;
+					.listfont();
+				}
+			}// Closes Core-Skills
+
+
+
+		} // Closes About-Skills
+
+		.work-history{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-left: 3%;
+
+			h2{
+				.h2font();
+				font-size: 3.5rem;
+			}
+			.mcdonalds{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				margin-left: 5%;
+				.mcleft{
+					width: 50%;
+					h3{
+						font-weight: bold;
+						font-family: @headerfont;
+						font-size: 2rem;
+						border-bottom: 2px solid @color;
+						width: 100%;
+					}
+					p{
+						.pfont();
+						
+					}
+				}// Closes McLeft
+				.mcright{
+					width: 50%;
+					h3{
+						font-weight: bold;
+						font-family: @headerfont;
+						font-size: 2rem;
+						margin-bottom: 3%;
+						border-bottom: 2px solid @color;
+						width: 45%;
+					}
+					ul{
+						list-style: disc;
+						li{
+							.listfont();
+						}
+
+					}
+				}// Closes McRight
+			}// Closes McDonald's
+			.walmart{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				margin-left: 5%;
+				margin-top: 5%;
+				.wmleft{
+					width: 50%;
+					h3{
+						font-weight: bold;
+						font-family: @headerfont;
+						font-size: 2rem;
+						border-bottom: 2px solid @color;
+						width: 100%;
+					}
+					p{
+						.pfont();
+						
+					}
+				}// Closes WmLeft
+				.wmright{
+					width: 50%;
+					h3{
+						font-weight: bold;
+						font-family: @headerfont;
+						font-size: 2rem;
+						margin-bottom: 3%;
+						border-bottom: 2px solid @color;
+						width: 45%;
+					}
+					ul{
+						list-style: disc;
+						li{
+							.listfont();
+						}
+
+					}
+				}// Closes wmRight
+			}// Closes Walmart
+
+			
+		}// Closes Work History
+		.academic{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			#academic{
+				width: 100%;
+				.h2font();
+				border-bottom: 2px solid @color;
+				margin-left: 2%;
+			}
+			.container2{
+				display: flex;
+				justify-content: space-evenly;
+				.lawrenceville{
+					// border: 1px solid;
+					width: 45%;
+					#lville{
+						font-family: @headerfont;
+						font-weight: bold;
+						font-size: 1.5rem;
+						margin-bottom: 3%;
+					}
+					.school-para1{
+						.pfont();
+					}
+				}
+				.lambda{
+					// border: 1px solid;
+					width: 45%;
+					h3{
+						font-family: @headerfont;
+						font-weight: bold;
+						font-size: 1.5rem;
+						margin-bottom: 3%;
+					}
+					p{
+						.pfont();
+					}
+				}
+			}
+		}// Closes Academic
+
+
+	} // Closes Info
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}// Closes Wrapper
+
 
